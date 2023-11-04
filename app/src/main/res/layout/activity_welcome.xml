@@ -5,19 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/red"
+    android:background="@color/blue_Icontact"
     tools:context=".Welcome_Screen.WelcomeActivity">
 
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/welcomeViewPager2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_weight="2"
+        android:layout_height="match_parent">
 
     </androidx.viewpager2.widget.ViewPager2>
+
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/welcomeTabLayout"
         android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/white"
+        android:layout_marginBottom="10sp"
+        android:background="@color/blue_Icontact"
         android:layout_height="wrap_content" />
+
 </LinearLayout>

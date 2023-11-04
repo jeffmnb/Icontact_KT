@@ -20,12 +20,19 @@ class Welcome2FragmentActivity : Fragment() {
     ): View? {
         binding = FragmentWelcome2Binding.inflate(inflater, container, false)
 
+        // recuperando nossos componentes da Fragment
         val StartButton = binding.startButton
         val ImageView = binding.imageView
         val TextView = binding.textView
 
         StartButton.setOnClickListener {
+            // intent - "Intenção", é usado para iniciar uma nova atividade no Android
+            // nesse caso, estamos usando para levar a uma nova tela
+
+            // setando que a nossa intenção é levar para "MainActivity"
             val intent = Intent(context, MainActivity::class.java)
+
+            //limpando todas as telas da pilha
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }

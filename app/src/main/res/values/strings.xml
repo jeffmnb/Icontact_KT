@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IContact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="welcome_text">Gerencie seus contatos com Icontact 😊</string>
+
+    <string name="thank_text">Obrigado por usar nosso app ❤️</string>
+</resources>
